@@ -1,6 +1,12 @@
-@media screen and (orientation:landscape) {
-   /*  some code */
-}
+html {
+   transform: rotate(90deg);
+   transform-origin: bottom left;
+   position: absolute;
+   width: 100vh;
+   height: 100vw;
+   overflow: auto;
+ }
+ 
 
 
 * {

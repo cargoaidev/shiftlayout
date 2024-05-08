@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CMQ LAYOUT WEB</title>
+   <link rel="stylesheet" href="./src/css/styles.css">   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+   <div class="container text-center row" id="head">  
+      <div class="col">
+         <img src="/src/img/logo.png" alt="CARGO">
+      </div>
+      <div class="col-10 text-center">
+         <h2>LAYOUT DEL DEPÓSITO</h2>         
+      </div>        
+   </div>    
+   <p class="text-center">HAGA CLICK SOBRE UNA IMAGEN Y LUEGO PUEDE ACERCARLA PARA VER MEJOR CADA SECTOR</p>    
+   
+   <hr>
+
+    <ul class="nav nav-tabs " id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">LAYOUT TURNOS DE DÍA</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">LAYOUT TURNO NOCTURNO</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">LAYOUT CON SEÑALES DE HSE</button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+         <img src="./src/img/day.png" id="day" alt="Layout de día" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+         <img src="./src/img/night.png" id="night" alt="Layout de noche" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+         <img src="./src/img/emergengy.png" id="hse" alt="Layout con señales de peligro y emergencias" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+   
+
+   
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./src/js/script.js"></script>
+
+
+
+<!-- <script>
+   /* Execute the magnify function: */
+   magnify("day", 1.5);
+   magnify("night", 1.5);
+   magnify("hse", 1.5);
+   /* Specify the id of the image, and the strength of the magnifier glass: */
+</script> -->
+
+
+
+</html>

@@ -3,34 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tooltip Example</title>
-<!-- Include Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Tooltip and Focus Example</title>
+<style>
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
 </head>
 <body>
 
-<!-- Tooltip element -->
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-  Hover over me
-</button>
-
-<!-- Include jQuery and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div id="myDiv" class="tooltip" tabindex="0">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
 
 <script>
-$(document).ready(function(){
-  // Initialize tooltips
-  $('[data-toggle="tooltip"]').tooltip();
-  
-  // Show tooltips on page load
-  $('[data-toggle="tooltip"]').tooltip('show');
-
-  // Optional: Hide tooltips after 5 seconds
-  setTimeout(function(){
-    $('[data-toggle="tooltip"]').tooltip('hide');
-  }, 5000);
-});
+// Set focus on the div with id 'myDiv' when the page loads
+window.onload = function() {
+  document.getElementById('myDiv').focus();
+};
 </script>
 
 </body>

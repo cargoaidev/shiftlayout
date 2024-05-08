@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tooltip Example</title>
+<!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Tooltip element -->
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Hover over me
+</button>
+
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Initialize tooltips
+  $('[data-toggle="tooltip"]').tooltip();
+  
+  // Show tooltips on page load
+  $('[data-toggle="tooltip"]').tooltip('show');
+
+  // Optional: Hide tooltips after 5 seconds
+  setTimeout(function(){
+    $('[data-toggle="tooltip"]').tooltip('hide');
+  }, 5000);
+});
+</script>
+
+</body>
+</html>

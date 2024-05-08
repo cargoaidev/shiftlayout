@@ -70,3 +70,9 @@ function myFunction(imgs) {
 //      return {x : x, y : y};
 //    }
 //  }
+
+
+function myOnload() {
+   alert("SELECCIONE EL LAYOUT QUE DESEA VER Y GIRE EL CELULAR \n PARA UN MEJOR ACERCAMIENTO \uD83D\uDE00");
+ }
+ 

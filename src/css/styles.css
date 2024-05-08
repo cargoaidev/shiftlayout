@@ -1,13 +1,3 @@
-html {
-   transform: rotate(90deg);
-   transform-origin: bottom left;
-   position: absolute;
-   width: 100vh;
-   height: 100vw;
-   overflow: auto;
- }
- 
-
 
 * {
    box-sizing: border-box;
@@ -31,10 +21,6 @@ html {
    align-content: center;
   
 }
-
-
-
-
 
 
 /* .img-magnifier-glass {

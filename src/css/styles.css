@@ -9,8 +9,8 @@
 
  }
 
-#logo {
-   width:10rem ;
+#head,#logo,#myTab {
+     width: 100%;
 }
 
 .instruction,h2, p {

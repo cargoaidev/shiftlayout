@@ -43,13 +43,10 @@ display: none;
 
 transition: transform 0.25s ease;
 cursor: zoom-in;
-
 }
 
-input[type=checkbox]:checked ~ label > img {
-transform: scale(3) translate(22rem, 10rem);
+input[type=checkbox]:checked ~ label > .image {
+/* transform: scale(2,2); */
 cursor: zoom-out;
-padding-left: 100px;
-padding-top: 100px;
 }
 

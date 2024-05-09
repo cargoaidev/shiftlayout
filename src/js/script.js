@@ -7,9 +7,7 @@ function myFunction(imgs) {
    if (expandImg.style.width === "100%") {
       expandImg.style.width = "200%";
    } 
-   else if (expandImg.style.width == "200%"){
-      expandImg.style.width = "300%";
-   }
+   
    else {
       expandImg.style.width = "100%";
    }

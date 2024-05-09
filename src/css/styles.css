@@ -40,14 +40,16 @@ display: none;
 }
 
 .image {
-margin: 100px;
+
 transition: transform 0.25s ease;
 cursor: zoom-in;
 
 }
 
 input[type=checkbox]:checked ~ label > img {
-transform: scale(3);
+transform: scale(3) translate(22rem, 10rem);
 cursor: zoom-out;
+padding-left: 100px;
+padding-top: 100px;
 }
 
